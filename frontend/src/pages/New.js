@@ -12,7 +12,11 @@ class New extends Component{
         hashtags: '',
     }
 
+<<<<<<< HEAD
     handleSubmit = async e => {
+=======
+    handleSubmit = async e =>{
+>>>>>>> 4a8b4e22897ae65d175424ad54489c1c4a359824
         e.preventDefault()
 
         const data = new FormData()

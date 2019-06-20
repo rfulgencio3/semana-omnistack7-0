@@ -23,13 +23,18 @@ class Feed extends Component{
     }
 
     registerToSocket = () => {
+<<<<<<< HEAD
         const socket = io('http://localhost:3333')
+=======
+        const socket = io('http://localhost:333')
+>>>>>>> 4a8b4e22897ae65d175424ad54489c1c4a359824
 
         // post, like
 
         socket.on('post', newPost => {
             this.setState({ feed: [newPost, ... this.state.feed] })
         })
+<<<<<<< HEAD
 
         socket.on('like', likedPost => {
             this.setState({ 
@@ -38,6 +43,8 @@ class Feed extends Component{
                 ) 
             })
         })
+=======
+>>>>>>> 4a8b4e22897ae65d175424ad54489c1c4a359824
         
         socket.on('like', likedPost => {
             this.setState({
